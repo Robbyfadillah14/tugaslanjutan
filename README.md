@@ -1,1 +1,73 @@
 # tugaslanjutan
+package com.example.jualikanhias;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+<TextView
+        android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jual beli ikan hias"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.040" />
+
+<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="36in"
+        android:layout_height="635dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+<ScrollView
+        android:layout_width="96dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="623dp"
+                android:layout_marginLeft="623dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                tools:layout_editor_absoluteY="296dp">
+
+<LinearLayout
+            android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+</ScrollView>
+
+<ImageView
+        android:id="@+id/imageView"
+                android:layout_width="438dp"
+                android:layout_height="368dp"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="104dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+<Button
+        android:id="@+id/button"
+                android:layout_width="353dp"
+                android:layout_height="0dp"
+                android:text="Button"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="442dp" />
+
